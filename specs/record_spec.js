@@ -39,4 +39,8 @@ describe('Record', function(){
     assert.equal("Album", empty.title);
   });
 
+  it('should have a default price', function(){
+    assert.equal(0, empty.price);
+  });
+
 });
