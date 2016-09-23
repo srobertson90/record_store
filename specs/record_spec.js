@@ -15,4 +15,8 @@ describe('Record', function(){
     assert.equal("00523", test.id);
   });
 
+  it('should have an associated artist', function(){
+    assert.equal("Amon Amarth", test.artist);
+  });
+
 });
