@@ -11,4 +11,8 @@ describe('Record', function(){
     empty = new Record();
   });
 
+  it('should have an album id', function(){
+    assert.equal("00523", test.id);
+  });
+
 });
