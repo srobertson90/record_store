@@ -19,4 +19,8 @@ describe('Record', function(){
     assert.equal("Amon Amarth", test.artist);
   });
 
+  it('should have an album title', function(){
+    assert.equal("Sutur Rising", test.title);
+  });
+
 });
