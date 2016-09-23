@@ -31,4 +31,8 @@ describe('Record', function(){
     assert.equal("00000", blank.id);
   });
 
+  it('should have a default associated artist', function(){
+    assert.equal("Artist", blank.artist);
+  });
+
 });
