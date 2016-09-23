@@ -23,4 +23,8 @@ describe('Record', function(){
     assert.equal("Sutur Rising", test.title);
   });
 
+  it('should have a price', function(){
+    assert.equal(8.99, test.price);
+  });
+
 });
