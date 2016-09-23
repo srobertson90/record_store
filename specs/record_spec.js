@@ -11,20 +11,4 @@ describe('Record', function(){
     empty = new Record();
   });
 
-  it('should have an account number', function(){
-    assert.equal("00523", test.id);
-  });
-
-  it('should have an associated artist', function(){
-    assert.equal("Amon Amarth", test.artist);
-  });
-
-  it('should have an album title', function(){
-    assert.equal("Sutur Rising", test.title);
-  });
-
-  it('should have a price', function(){
-    assert.equal(8.99, test.price);
-  });
 });
-
