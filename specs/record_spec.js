@@ -4,11 +4,11 @@ var Record = require('../record');
 describe('Record', function(){
 
   var test;
-  var empty;
+  var blank;
 
   before(function(){
     test = new Record({id: "00523", artist: "Amon Amarth",title: "Sutur Rising", price: 8.99});
-    empty = new Record();
+    blank = new Record();
   });
 
   it('should have an album id', function(){
@@ -25,6 +25,10 @@ describe('Record', function(){
 
   it('should have a price', function(){
     assert.equal(8.99, test.price);
+  });
+
+  it('should have a default album id', function(){
+    assert.equal("00000", blank.id);
   });
 
 });
