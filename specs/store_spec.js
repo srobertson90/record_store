@@ -32,7 +32,9 @@ describe('Store', function(){
     assert.deepEqual([{id: "00001", artist: "Amon Amarth",title: "Sutur Rising", price: 8.99}], testStore.records);
   });
 
-
+  it('should have a default company', function(){
+    assert.equal("Generic", genericStore.company);
+  });
 
 
 });
