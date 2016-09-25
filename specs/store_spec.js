@@ -36,5 +36,9 @@ describe('Store', function(){
     assert.equal("Generic", genericStore.company);
   });
 
+  it('should have a default city', function(){
+    assert.equal("Somewhere", genericStore.city);
+  });
+
 
 });
