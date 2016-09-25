@@ -15,5 +15,8 @@ describe('Store', function(){
     assert.equal("Harveys", testStore.company);
   });
 
+  it('should have a city', function(){
+    assert.equal("Glasgow", testStore.city);
+  });
 
 });
