@@ -17,6 +17,10 @@ Store.prototype = {
     record = new Record(input);
     this.records.push(record);
   },
+  findByTitle: function(findTitle){
+    foundRecord = _.find(this.records, ["title", findTitle]);
+    return foundRecord;
+  }
 
 };
 
