@@ -19,4 +19,8 @@ describe('Store', function(){
     assert.equal("Glasgow", testStore.city);
   });
 
+  it('should start with an empty array', function(){
+    assert.deepEqual([], testStore.records);
+  });
+
 });
