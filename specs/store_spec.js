@@ -40,5 +40,8 @@ describe('Store', function(){
     assert.equal("Somewhere", genericStore.city);
   });
 
+  it('should have a default balance', function(){
+    assert.equal(0, genericStore.balance);
+  });
 
 });
