@@ -23,4 +23,11 @@ describe('Store', function(){
     assert.deepEqual([], testStore.records);
   });
 
+  it('should be able to add a record', function(){
+    testStore.addRecord({artist: "Amon Amarth",title: "Sutur Rising", price: 8.99});
+    assert.deepEqual([{id: "00001", artist: "Amon Amarth",title: "Sutur Rising", price: 8.99}], testStore.records);
+  });
+
+  
+
 });

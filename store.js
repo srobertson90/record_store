@@ -13,7 +13,7 @@ Store.prototype = {
   addRecord: function(input){
     var str = "" + (this.records.length + 1);
     var pad = "00000";
-    input.number = pad.substring(0, pad.length - str.length) + str;
+    input.id = pad.substring(0, pad.length - str.length) + str;
     record = new Record(input);
     this.records.push(record);
   },
