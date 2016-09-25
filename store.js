@@ -20,6 +20,19 @@ Store.prototype = {
   findByTitle: function(findTitle){
     foundRecord = _.find(this.records, ["title", findTitle]);
     return foundRecord;
+  },
+  sellRecord: function(soldRecord){
+    //get record index in records
+    //remove record from records by index
+    this.balance += soldRecord.price;
+  },
+  listRecords: function(){
+    var output = [];
+    for (var record of this.records){
+      string = record.title + " - " + record.artist;
+      output.push(string);
+    }
+    return output;
   }
 
 };

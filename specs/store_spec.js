@@ -48,4 +48,13 @@ describe('Store', function(){
     assert.deepEqual({id: "00001", artist: "Amon Amarth",title: "Sutur Rising", price: 8.99}, testStore.findByTitle("Sutur Rising"));
   });
 
+  it('adds to balance when selling a record', function(){
+    testStore.sellRecord(testStore.records[0]);
+    assert.equal(2155.99, testStore.balance);
+  });
+
+  it('can list records', function(){
+    assert.deepEqual(['Sutur Rising - Amon Amarth'], testStore.listRecords());
+  });
+
 });
